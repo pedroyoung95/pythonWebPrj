@@ -11,4 +11,6 @@ data1 = soup.find('div', {'class':'component_section'})
 
 data2 = data1.findAll('span', {'class':'title'})
 
-pprint(data2)
+title_list = [t.text for t in data2]
+
+pprint(title_list)
